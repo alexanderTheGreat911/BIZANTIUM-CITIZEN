@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game - Hewan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 Memory Card Game - Hewan</h1>
+        
+        <div class="controls">
+            <div class="level-select">
+                <label>Pilih Level:</label>
+                <select id="level">
+                    <option value="easy">Mudah (2x2)</option>
+                    <option value="medium" selected>Sedang (4x4)</option>
+                    <option value="hard">Sulit (6x6)</option>
+                </select>
+            </div>
+            
+            <div class="stats">
+                <div class="stat">Waktu: <span id="timer">00:00</span></div>
+                <div class="stat">Langkah: <span id="moves">0</span></div>
+                <div class="stat">Bintang: <span id="stars">1000</span></div>
+            </div>
+            
+            <button id="startBtn" onclick="startGame()">Mulai</button>
+            <button id="resetBtn" onclick="resetGame()">Reset</button>
+        </div>
+        
+        <div class="game-board" id="gameBoard"></div>
+        
+        <p class="footer">Buat pakai VS Code - Game Memory Hewan Sederhana</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
